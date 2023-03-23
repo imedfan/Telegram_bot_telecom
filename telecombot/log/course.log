@@ -1,0 +1,42 @@
+2023-03-23 11:16:59,941 INFO com.coursework.telecombot.TelecombotApplication [main] Starting TelecombotApplication using Java 17.0.6 on Home with PID 20105 (/home/medfan/clone/Telegram_bot_telecom/telecombot/target/classes started by medfan in /home/medfan/clone/Telegram_bot_telecom)
+2023-03-23 11:16:59,943 INFO com.coursework.telecombot.TelecombotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-23 11:17:00,461 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-23 11:17:00,519 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2023-03-23 11:17:00,997 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-23 11:17:01,044 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-03-23 11:17:01,247 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-23 11:17:01,454 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-23 11:17:02,138 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-23 11:17:02,160 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-23 11:17:03,165 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-23 11:17:03,173 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-23 11:17:03,789 ERROR com.coursework.telecombot.service.TelegramBot [main] Error setting bot command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [404] Not Found
+2023-03-23 11:17:04,363 ERROR com.coursework.telecombot.config.BotInitializer [main] Error registering bot: Bot token and username can't be empty
+2023-03-23 11:17:04,365 INFO com.coursework.telecombot.TelecombotApplication [main] Started TelecombotApplication in 4.752 seconds (JVM running for 5.34)
+2023-03-23 11:17:04,372 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-23 11:17:04,375 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-23 11:17:04,384 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-23 11:18:38,865 INFO com.coursework.telecombot.TelecombotApplication [main] Starting TelecombotApplication using Java 17.0.6 on Home with PID 20679 (/home/medfan/clone/Telegram_bot_telecom/telecombot/target/classes started by medfan in /home/medfan/clone/Telegram_bot_telecom)
+2023-03-23 11:18:38,872 INFO com.coursework.telecombot.TelecombotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-23 11:18:39,358 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-23 11:18:39,411 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2023-03-23 11:18:39,837 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-23 11:18:39,884 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-03-23 11:18:40,076 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-23 11:18:40,221 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-23 11:18:40,619 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-23 11:18:40,636 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-23 11:18:41,239 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-23 11:18:41,247 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-23 11:18:42,437 INFO com.coursework.telecombot.TelecombotApplication [main] Started TelecombotApplication in 3.938 seconds (JVM running for 4.557)
+2023-03-23 11:18:56,711 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [KuraqGroupbot Telegram Executor] No value present
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Unknown Source)
+	at com.coursework.telecombot.service.impl.UserServiceImpl.getById(UserServiceImpl.java:37)
+	at com.coursework.telecombot.service.TelegramBot.onUpdateReceived(TelegramBot.java:104)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-03-23 11:19:16,697 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-23 11:19:16,701 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-23 11:19:16,716 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

@@ -1,6 +1,6 @@
 <configuration>
 
-    <property name="HOME_LOG" value="/var/log/proj3ct.io/demo/bot/course.log"/>
+    <property name="HOME_LOG" value="/home/medfan/clone/Telegram_bot_telecom/telecombot/log/course.log"/>
 
     <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${HOME_LOG}</file>
